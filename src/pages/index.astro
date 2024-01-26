@@ -1,0 +1,70 @@
+---
+import Badge from '../components/Badge.astro';
+import SocialPill from '../components/SocialPill.astro';
+import Experience from '../components/Experience.astro';
+import Briefcase from '../components/icon/Briefcase.astro';
+import SectionContiane from '../components/SectionContiane.astro';
+import Projects from '../components/Projects.astro';
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import myImage from "../img/phonto.png";
+import  Github  from "../components/icon/Github.astro";
+import Linkedin   from "../components/icon/Linkedin.astro";
+import Email   from "../components/icon/Email.astro";
+import Facebook   from "../components/icon/Facebook.astro";
+import Code   from "../components/icon/Code.astro";
+---
+
+<Layout title="Porfolio de garber">
+	<main>
+    <SectionContiane class="py-44 pb-32">
+      <Image src={myImage} alt="logo" class=" rounded-full size-12 mb-4" />
+      <h1 class="text-white text-5xl font-bold flex  flex-row gap-x-4 pb-10">Hey, soy Garber
+        <a href="https://www.linkedin.com/in/garber/" class="flex justify-center items-center"><Badge> Disponible para trabajar </Badge></a>
+        </h1> 
+        <h2 class="text-2xl text-white opacity-80 text-wrap">
+        Soy un desarrollador web con experiencia en el desarrollo de aplicaciones web y móviles. <span class="text-yellow-200/90">
+          Me encanta crear cosas nuevas y aprender nuevas tecnologías. 🚀
+        </span>
+        </h2>
+      
+          <nav class="flex flex-grow-0 gap-x-3 mt-8">
+            <SocialPill href="https://www.linkedin.com/in/garber/">
+                <Linkedin />
+                Linkedin
+            </SocialPill>
+                 <SocialPill  href="https://github.com/">
+                <Github />
+                Github
+            </SocialPill>
+              <SocialPill>
+                <Email />
+                Garbfbatista@gmaail.com
+            </SocialPill>
+             <SocialPill>
+                <Facebook />
+                Garber Batista
+            </SocialPill>
+        
+          </nav>  
+    </SectionContiane>
+
+
+    <SectionContiane id="Experiencia">
+      <h2 class="text-2xl font-semibold mb-6 text-white flex gap-x-3 items-center">
+        <Briefcase class="size-7" />
+        Experiencia laboral
+      </h2>
+     <Experience />
+    </SectionContiane>
+
+     <SectionContiane id="Experiencia">
+      <h2 class="text-2xl font-semibold mb-6 text-white flex gap-x-3 items-center">
+        <Code class="size-8" />
+        Proyectos
+      </h2>
+     <Projects/>
+    </SectionContiane>
+	</main>
+</Layout>
+
