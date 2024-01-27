@@ -1,22 +1,41 @@
-
+---
+import { Image } from 'astro:assets';
+import myImage from "../img/02.jpg";
+---
 
 <article class="text-white">
   <h3 class="text-2xl fonts text-yellow-200 mb-2">
-    Project 1
+      Template de constructora
   </h3>
   <p class="text-lg mb-4 text-pretty">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, voluptatibus, quibusdam, voluptatem, quia voluptas quod quos quae voluptatum quidem doloremque doloribus nemo. Quisquam, voluptatibus, quibusdam, voluptatem, quia voluptas quod quos quae voluptatum quidem doloremque doloribus nemo.
+    Pagina web para constructora con secciones de servicios, proyectos, contacto y blog.
   </p>
-  <ul class="flex flex-row gap-3 mb-2">
+  <h4 class="text-xl mb-4 text-yellow-200">
+    Tecnologias
+  </h4>
+  <ul class="flex flex-row gap-4 mb-4">
     <li>
-      <a href="#">Link 1</a>
+  <button class="animate-border inline-block rounded-md bg-white bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] p-1">
+    <span class="block rounded-md bg-slate-900 px-5 py-3 font-bold text-white"> 
+      Astro
+       </span>
+  </button>
     </li>
     <li>
-      <a href="#">Link 2</a>
+  <button class="animate-border inline-block rounded-md bg-white bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] p-1">
+    <span class="block rounded-md bg-slate-900 px-5 py-3 font-bold text-white"> 
+      Tailwindcss
+       </span>
+  </button>
     </li>
     <li>
-      <a href="#">Link 3</a>
-    </li>
+     <button class="animate-border inline-block rounded-md bg-white bg-gradient-to-r from-red-500 via-purple-500 to-blue-500 bg-[length:400%_400%] p-1">
+    <span class="block rounded-md bg-slate-900 px-5 py-3 font-bold text-white"> 
+      Javascript
+       </span>
+  </button>
   </ul>
-  <img class="rounded shadow-2xl shadow-white/10" src="https://www.ismartrecruit.com/upload/blog/main_image/recruitment_chatbot_definition_features_and_benefits.webp" alt="">
+  <Image src={myImage} alt="My Image" />
 </article>
+
+
